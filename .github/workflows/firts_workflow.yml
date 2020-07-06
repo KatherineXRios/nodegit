@@ -16,7 +16,7 @@ jobs:
             key: ${{ secrets.NODEGIT_SECRET }}
             port: 3000
             script: |
-            cd ~/api/
+            cd ~/nodegit/
                   git pull origin master
-                  npm run deploy
+                  
                   
