@@ -13,7 +13,7 @@ jobs:
           with:
             host: 7588673d8565
             username: developer
-            key: ${{ secrets.NODEGIT_SECRET }}
+            key: ${{ secrets.NG_SECRET }}
             port: 3000
             script: |
               cd test-nodegit
