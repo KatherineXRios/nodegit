@@ -1,5 +1,4 @@
-name: Hello World
-
+name: Deployment Workflow
 on:
   push:
     branches: [ master ]
