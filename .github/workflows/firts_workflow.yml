@@ -16,7 +16,7 @@ jobs:
             key: ${{ secrets.NODEGIT_SECRET }}
             port: 3000
             script: |
-            cd ~/my-express-app/
+            cd ~/api/
                   git pull
                   npm install
-                  pm2 restart app.js
+                  pm2 restart index.js
