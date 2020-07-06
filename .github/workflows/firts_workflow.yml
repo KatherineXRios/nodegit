@@ -12,11 +12,11 @@ jobs:
         - name: probando ip server ssh conexion
           uses: appleboy/ssh-action@master
           with:
-            host: ${{ secrets.HOST_SECRET }}
-            username: katherinerios
             key: ${{ secrets.NG_SECRET }}
+            username: developer
+            host: ${{ secrets.HOST_SECRET }}         
             port: 3000
             script: |
-              cd test-nodegit
+              cd nodegit
               git pull origin master
               git status
