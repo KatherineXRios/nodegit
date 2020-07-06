@@ -17,6 +17,6 @@ jobs:
             port: 3000
             script: |
             cd ~/api/
-                  git pull
-                  npm install
-                  pm2 restart index.js
+                  git pull origin master
+                  npm run deploy
+                  
