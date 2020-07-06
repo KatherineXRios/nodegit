@@ -6,12 +6,13 @@ on:
 jobs:
     job_one:
         name: Deploy
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-bionic
+
         steps: 
         - name: probando ip server ssh conexion
           uses: appleboy/ssh-action@master
           with:
-            host: 7588673d8565
+            host: ${{ secrets.HOST_SECRET }}
             username: developer
             key: ${{ secrets.NODEGIT_SECRET }}
             port: 3000
