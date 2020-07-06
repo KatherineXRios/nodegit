@@ -16,5 +16,6 @@ jobs:
             key: ${{ secrets.NODEGIT_SECRET }}
             port: 3000
             script: |
-            cd ~/nodegit/
-                  git pull origin master
+              cd test-nodegit
+              git pull origin master
+              git status
