@@ -13,6 +13,7 @@ jobs:
         with:
           host: http://162.243.161.120
           username: developer
+          key: ${{ secrets.NODEGIT_SECRET }}
           script: |
             mkdir -p ~/my-express-app/ # create a new folder
             cd ~/my-express-app/ # navigate into the folder
