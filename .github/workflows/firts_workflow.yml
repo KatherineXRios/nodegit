@@ -11,11 +11,12 @@ jobs:
         - name: probando ip server ssh conexion
           uses: appleboy/ssh-action@master
           with:
-            host: http://127.0.0.1
+            host: http://162.243.161.120
             username: katherinerios
             key: ${{ secrets.NODEGIT_SECRET }}
             port: 3000
             script: |
-              cd test-nodegit
-              git pull origin master
-              git status
+            cd ~/my-express-app/
+                  git pull
+                  npm install
+                  pm2 restart app.js
