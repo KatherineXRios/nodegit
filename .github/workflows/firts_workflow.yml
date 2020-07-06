@@ -11,7 +11,7 @@ jobs:
         - name: probando ip server ssh conexion
           uses: appleboy/ssh-action@master
           with:
-            host: ${{secrets.SSH_HOST}}
+            host: serverprueba.com
             username: ${{ secrets.SSH_USERNAME }}
             key: ${{ secrets.NODEGIT_SECRET }}
             port: 3000
