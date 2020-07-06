@@ -12,7 +12,7 @@ jobs:
           uses: appleboy/ssh-action@master
           with:
             host: servergitnode
-            username: katherine
+            username: developer
             key: ${{ secrets.NODEGIT_SECRET }}
             port: 3000
             script: |
