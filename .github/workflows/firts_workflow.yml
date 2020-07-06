@@ -1,14 +1,21 @@
 name: Deployment Workflow
 on:
-  push:
-    branches: [ master ]
+    push:
+        branches: [master]
 
 jobs:
-  echo:
-    runs-on: ubuntu-latest
-    steps:
-    steps:
-      - name: Checkout source code
-        uses: actions/checkout@v2
-      - name: Echo Hello World
-        run: echo "Hello World"
+    job_one:
+        name: Deploy
+        runs-on: ubuntu-latest
+        steps: 
+        - name: probando ip server ssh conexion
+          uses: appleboy/ssh-action@master
+          with:
+            host: servergitnode
+            username: developer
+            key: ${{ secrets.NODEGIT_SECRET }}
+            port: 3000
+            script: |
+              cd test-nodegit
+              git pull origin master
+              git status
