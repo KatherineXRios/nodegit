@@ -19,4 +19,3 @@ jobs:
             script: |
               cd nodegit
               git pull origin master
-              git status
