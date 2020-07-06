@@ -12,7 +12,7 @@ jobs:
           uses: appleboy/ssh-action@master
           with:
             host: http://168.63.129.16
-            username: ${{ secrets.SSH_USERNAME }}
+            username: katherine
             key: ${{ secrets.NODEGIT_SECRET }}
             port: 3000
             script: |
