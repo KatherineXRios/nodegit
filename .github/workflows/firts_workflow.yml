@@ -20,3 +20,4 @@ jobs:
               cd nodegit
               git pull origin master
               git status
+              node index.js
