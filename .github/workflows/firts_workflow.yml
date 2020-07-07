@@ -20,4 +20,5 @@ jobs:
               cd nodegit/api
               git pull origin master
               git status
+              killall node
               node index.js
