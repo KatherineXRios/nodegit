@@ -6,16 +6,17 @@ on:
 jobs:
     job_one:
         name: Deploy
-        runs-on: ubuntu-latest
+        runs-on: ubuntu:18.04
 
         steps: 
         - name: probando ip server ssh conexion
-          uses: appleboy/ssh-action@master
+          uses: KatherineXRios/nodegit@master
           with:
-            key: ${{ secrets.NG_SECRET }}
+            key: ${{ secrets.NUEVO_SECRET }}
             username: developer
             host: ${{ secrets.HOST_SECRET }}         
             port: 3000
             script: |
               cd nodegit
               git pull origin master
+              git status
