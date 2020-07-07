@@ -12,7 +12,7 @@ jobs:
         - name: probando ip server ssh conexion
           uses: appleboy/ssh-action@master
           with:
-            key: ${{ secrets.PKEY_SECRET }}
+            key: ${{ secrets.KEY_SECRET }}
             username: developer
             host: 162.243.161.120        
             port: 3000
