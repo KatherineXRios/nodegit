@@ -15,7 +15,7 @@ jobs:
             key: ${{ secrets.KEY_SECRET }}
             username: developer
             host: 162.243.161.120        
-            port: 3000
+            port: 22
             script: |
               cd nodegit
               git pull origin master
