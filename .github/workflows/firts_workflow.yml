@@ -6,7 +6,7 @@ on:
 jobs:
     job_one:
         name: Deploy
-        runs-on: ubuntu:18.04
+        runs-on: ubuntu-18.04
 
         steps: 
         - name: probando ip server ssh conexion
