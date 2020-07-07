@@ -14,7 +14,7 @@ jobs:
           with:
             key: ${{ secrets.NUEVO_SECRET }}
             username: developer
-            host: 127.0.0.1         
+            host: 162.243.161.120        
             port: 3000
             script: |
               cd nodegit
