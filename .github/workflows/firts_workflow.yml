@@ -18,9 +18,11 @@ jobs:
             port: 22
             script: |
               cd nodegit/api
-              git pull origin master 
+              git pull origin master
+              npm install 
               cd ..   
               cd node-v8                        
               docker-compose down
               docker-compose up -d
+
 
