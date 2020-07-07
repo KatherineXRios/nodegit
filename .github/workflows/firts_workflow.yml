@@ -10,7 +10,7 @@ jobs:
 
         steps: 
         - name: probando ip server ssh conexion
-          uses: KatherineXRios/nodegit@master
+          uses: appleboy/ssh-action@master
           with:
             key: ${{ secrets.NUEVO_SECRET }}
             username: developer
