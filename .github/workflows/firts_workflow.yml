@@ -12,9 +12,9 @@ jobs:
         - name: probando ip server ssh conexion
           uses: appleboy/ssh-action@master
           with:
-            key: ${{ secrets.KEY_SECRET }}
+            key: ${{ secrets.PRUEBADESPLIEGUESECRET }}
             username: developer
-            host: 159.89.239.156        
+            host: 142.93.203.157        
             port: 22
             script: |
               cd nodegit/api
