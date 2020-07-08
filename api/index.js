@@ -5,7 +5,7 @@ http.createServer(function (req, res) {
     console.log('texto cualquiera');    
     var numero = random.int(0, 100);
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end('Prueba ahora con dockers Kim y Katt 2' + numero);
+    res.end('Prueba ahora con dockers Kim y Katt 3' + numero);
     
 }).listen(3000);
 
